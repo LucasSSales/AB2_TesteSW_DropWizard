@@ -1,6 +1,11 @@
 package br.ufal.ic.academico;
 
-import br.ufal.ic.academico.ApplicationClasses.*;
+import br.ufal.ic.academico.StudentClasses.Student;
+import br.ufal.ic.academico.StudentClasses.StudentDAO;
+import br.ufal.ic.academico.StudentClasses.StudentResource;
+import br.ufal.ic.academico.SubjectClasses.Subject;
+import br.ufal.ic.academico.SubjectClasses.SubjectDAO;
+import br.ufal.ic.academico.SubjectClasses.SubjectResource;
 import br.ufal.ic.academico.exemplos.MyResource;
 import br.ufal.ic.academico.exemplos.Person;
 import br.ufal.ic.academico.exemplos.PersonDAO;
@@ -36,21 +41,24 @@ public class AcademicoApp extends Application<ConfigApp> {
     @Override
     public void run(ConfigApp config, Environment environment) {
         
-        final PersonDAO dao = new PersonDAO(hibernate.getSessionFactory());
-        final TestDAO tdao = new TestDAO(hibernate.getSessionFactory());
+        final PersonDAO dao = new PersonDAO(hibernate.getSessionFactory()); //
         final SubjectDAO subjdao = new SubjectDAO(hibernate.getSessionFactory());
+        final StudentDAO studao = new StudentDAO(hibernate.getSessionFactory());
 
-        final MyResource resource = new MyResource(dao);
-        final TestResource tr = new TestResource(tdao);
+
+        final MyResource resource = new MyResource(dao); //
         final SubjectResource subjResource = new SubjectResource(subjdao);
+        final StudentResource studentResource = new StudentResource(studao);
+
         
-        environment.jersey().register(resource);
-        environment.jersey().register(tr);
+        environment.jersey().register(resource); //
         environment.jersey().register(subjResource);
+        environment.jersey().register(studentResource);
+
     }
 
     private final HibernateBundle<ConfigApp> hibernate
-            = new HibernateBundle<ConfigApp>(Person.class, Subject.class) {
+            = new HibernateBundle<ConfigApp>(Person.class, Subject.class, Student.class) {
         
         @Override
         public DataSourceFactory getDataSourceFactory(ConfigApp configuration) {

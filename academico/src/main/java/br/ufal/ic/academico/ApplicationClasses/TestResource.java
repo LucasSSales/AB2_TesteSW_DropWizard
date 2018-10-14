@@ -31,7 +31,7 @@ public class TestResource {
     @UnitOfWork
     public Response teste(){
         log.info("kkeaemen");
-        return Response.ok(tdao.t()).build();
+        return Response.ok(tdao.list()).build();
     }
 
 

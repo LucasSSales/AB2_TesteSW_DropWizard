@@ -1,4 +1,4 @@
-package br.ufal.ic.academico.ApplicationClasses;
+package br.ufal.ic.academico.SubjectClasses;
 
 import lombok.Getter;
 import lombok.NonNull;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class Subject {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     private String name;
@@ -27,6 +27,13 @@ public class Subject {
     @Setter
     private int minCredits;
 
-    private ArrayList<Integer> prerequisites;
+    private int[] prerequisites;
+
+    //colocar professores
+
+    public Subject (String name, int[] prerequisites){
+        this.name = name;
+        this.prerequisites = prerequisites;
+    }
 
 }

@@ -1,4 +1,4 @@
-package br.ufal.ic.academico.ApplicationClasses;
+package br.ufal.ic.academico.SubjectClasses;
 
 import io.dropwizard.hibernate.AbstractDAO;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +23,7 @@ public class SubjectDAO extends AbstractDAO<Subject> {
 
     public List<Subject> list() throws HibernateException {
         log.info("getting subjects");
-        return super.list(query("from Subjects"));
+        return super.list(query("from Subject"));
     }
 
 

@@ -1,5 +1,6 @@
 package br.ufal.ic.academico.ApplicationClasses;
 
+import br.ufal.ic.academico.exemplos.Person;
 import io.dropwizard.hibernate.AbstractDAO;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.HibernateException;
@@ -25,6 +26,8 @@ public class TestDAO extends AbstractDAO<AppTest> {
         log.info("getting persons");
         return super.list(query("from Person"));
     }
+
+
 
     public String t () throws HibernateException{
         return "kkeaemen";
