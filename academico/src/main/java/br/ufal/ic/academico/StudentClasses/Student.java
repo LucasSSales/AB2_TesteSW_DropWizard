@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.ArrayList;
 
 @Entity
 @Getter
@@ -21,20 +22,22 @@ public class Student {
     private String name;
     private int courseID;
     private int departamentID;
+    private boolean postgraduate;
 
     @Setter
     private int score;
     @Setter
-    private int[] studying; //ID DAS MATERIAS EM Q ESTA MATRICULADO
+    private ArrayList<Long> studying; //ID DAS MATERIAS EM Q ESTA MATRICULADO
     @Setter
-    private int[] approved; //ID DAS MATERIAS EM Q FOI APROVADO
+    private ArrayList<Long> approved; //ID DAS MATERIAS EM Q FOI APROVADO
     @Setter
-    private int[] disapproved; //ID DAS MATERIAS EM Q FOI REPROVADO
+    private ArrayList<Long> disapproved; //ID DAS MATERIAS EM Q FOI REPROVADO
 
-    public Student(String name, int courseID, int departamentID) {
+    public Student(String name, int courseID, int departamentID, boolean postgraduate) {
         this.name = name;
         this.courseID = courseID;
         this.departamentID = departamentID;
+        this.postgraduate = postgraduate;
     }
 
 

@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("students")
 @Slf4j
@@ -43,7 +44,7 @@ public class StudentResource {
 
         log.info("save: {}", entity);
 
-        Student s = new Student(entity.getName(), entity.getCourseID(), entity.getDepartamentID());
+        Student s = new Student(entity.getName(), entity.getCourseID(), entity.getDepartamentID(), entity.isPostgraduate());
         s.setScore(entity.getScore());
         s.setApproved(entity.getApproved());
         s.setDisapproved(entity.getDisapproved());
@@ -90,9 +91,10 @@ public class StudentResource {
         private int courseID;
         private int departamentID;
         private int score;
-        private int[] studying;
-        private int[] approved;
-        private int[] disapproved;
+        private boolean postgraduate;
+        private ArrayList<Long> studying;
+        private ArrayList<Long> approved;
+        private ArrayList<Long> disapproved;
     }
 
 

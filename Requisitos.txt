@@ -1,0 +1,16 @@
+Processo de Matrícula
+[X]Listar nomes dos Alunos (GET de Students);
+[X]Escolher aluno (GET {id} de Student)
+[X]Mostrar disciplinas do departamento do curso do aluno (GET Subjects onde courseId == id do curso do aluno)
+[X]Selecionar disciplina (ver se o aluno tem os creditos necessarios e os prerequisitos)
+[X]Informar se houve sucesso ou não
+
+[X]Negar matricula em materias fora do departamento
+[X]Alunos de Graduação podem cursar materias de pós ( se score == 170)
+[X]Alunos de pós NÃO podem cursar materias de graduação
+[X]Não pode se matricular em materias ja cursadas (ver se está em approved/studying)
+
+Consultas
+[]Cada secretaria deve listar informações das Materias ofertadas (id, creditos, id d prequisitos, num min de creditos, nome)
+[]Escolhendo um disciplina: id, num de creditos, id de prerequisitos, min de creditos, nome, professor, nome e id de alunos matriculados
+[]Emitir comprovante de matricula: nome, num de matricula(id), ids e nomes das materias em q esta matriculado 

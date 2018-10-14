@@ -69,7 +69,7 @@ public class AcademicoApp extends Application<ConfigApp> {
         final SecretaryResources secretaryResources = new SecretaryResources(secdao);
         final ProfessorResource professorResource = new ProfessorResource(pdao);
 
-        final RequirementsResources req = new RequirementsResources(studao);
+        final RequirementsResources req = new RequirementsResources(studao, ddao, subjdao);
 
         //JERSEY REGISTER
         environment.jersey().register(subjResource);

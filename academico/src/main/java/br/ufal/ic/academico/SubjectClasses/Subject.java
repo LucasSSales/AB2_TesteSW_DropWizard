@@ -23,16 +23,17 @@ public class Subject {
     private Long id;
 
     private String name;
-    private int[] prerequisites;
+    private Long prerequisites; //-1 se nao tiver
     private int courseID;
     private int departamentId;
     private int credits;
     private int minCredits;
     private int professor;
+    private boolean postgraduate;
 
 
 
-    public Subject (String name, int[] prerequisites, int courseID, int departamentId, int credits, int minCredits, int professor){
+    public Subject (String name, Long prerequisites, int courseID, int departamentId, int credits, int minCredits, int professor, boolean postgraduate){
         this.name = name;
         this.prerequisites = prerequisites;
         this.courseID = courseID;
@@ -40,6 +41,7 @@ public class Subject {
         this.credits = credits;
         this.minCredits = minCredits;
         this.professor = professor;
+        this.postgraduate = postgraduate;
     }
 
 }

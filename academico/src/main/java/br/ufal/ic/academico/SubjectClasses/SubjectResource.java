@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("subjects")
 @Slf4j
@@ -49,7 +50,7 @@ public class SubjectResource {
 
         Subject p = new Subject(
                 entity.getName(), entity.getPrerequisites(), entity.getCourseID(), entity.getDepartamentId(),
-                entity.getCredits(), entity.getMinCredits(), entity.getProfessor()
+                entity.getCredits(), entity.getMinCredits(), entity.getProfessor(), entity.isPostgraduate()
         );
 
         return Response.ok(sdao.persist(p)).build();
@@ -87,12 +88,13 @@ public class SubjectResource {
 
         //private Long id;
         private String name;
-        private int[] prerequisites;
+        private Long prerequisites;
         private int courseID;
         private int departamentId;
         private int credits;
         private int minCredits;
         private int professor;
+        private boolean postgraduate;
     }
 
 
