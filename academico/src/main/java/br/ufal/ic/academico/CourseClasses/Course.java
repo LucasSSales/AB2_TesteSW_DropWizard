@@ -15,16 +15,22 @@ import javax.persistence.Id;
 public class Course {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    private String name;
+    private int departamentId;
+    private int secretaryId;
+    private int[] subjectIds;
 
     @Setter
     private long[] students; //id dos estudantes
 
-    private String name;
-
-    public Course(String name){
+    public Course(String name, int departamentId, int secretaryId, int[] subjectIds){
         this.name = name;
+        this.departamentId = departamentId;
+        this.secretaryId = secretaryId;
+        this.subjectIds = subjectIds;
     }
 
 }

@@ -23,17 +23,23 @@ public class Subject {
     private Long id;
 
     private String name;
-
-    @Setter
-    private int minCredits;
-
     private int[] prerequisites;
+    private int courseID;
+    private int departamentId;
+    private int credits;
+    private int minCredits;
+    private int professor;
 
-    //colocar professores
 
-    public Subject (String name, int[] prerequisites){
+
+    public Subject (String name, int[] prerequisites, int courseID, int departamentId, int credits, int minCredits, int professor){
         this.name = name;
         this.prerequisites = prerequisites;
+        this.courseID = courseID;
+        this.departamentId = departamentId;
+        this.credits = credits;
+        this.minCredits = minCredits;
+        this.professor = professor;
     }
 
 }

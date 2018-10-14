@@ -32,9 +32,9 @@ public class SubjectDAO extends AbstractDAO<Subject> {
         return super.persist(entity);
     }
 
-//    public void delete(Serializable id) {
-//        currentSession().delete(this.get(id));
-//    }
+    public void delete(Serializable id) {
+        currentSession().delete(this.get(id));
+    }
 
 
 }

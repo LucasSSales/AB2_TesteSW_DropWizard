@@ -15,10 +15,12 @@ import javax.persistence.Id;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
+    private int courseID;
+    private int departamentID;
 
     @Setter
     private int score;
@@ -29,8 +31,10 @@ public class Student {
     @Setter
     private int[] disapproved; //ID DAS MATERIAS EM Q FOI REPROVADO
 
-    public Student(String name) {
+    public Student(String name, int courseID, int departamentID) {
         this.name = name;
+        this.courseID = courseID;
+        this.departamentID = departamentID;
     }
 
 
