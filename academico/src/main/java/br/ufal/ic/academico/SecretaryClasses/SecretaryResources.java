@@ -41,9 +41,8 @@ public class SecretaryResources {
     public Response save(SecretaryDTO entity) {
 
         log.info("save: {}", entity);
-        Secretary s = new Secretary(entity.getName());
+        Secretary s = new Secretary(entity.getName(), entity.isPostgraduate(), entity.getDepartamentId());
         s.setSubjects(entity.getSubjects());
-        s.setDepartamentId(entity.getDepartamentId());
         return Response.ok(secretaryDAO.persist(s)).build();
     }
 
@@ -55,7 +54,6 @@ public class SecretaryResources {
         log.info("update: id={}, {}", id, entity);
         Secretary s = secretaryDAO.get(id);
         s.setSubjects(entity.getSubjects());
-        s.setDepartamentId(entity.getDepartamentId());
         return Response.ok(entity).build();
     }
 
@@ -65,8 +63,9 @@ public class SecretaryResources {
     public Response delete(@PathParam("id") Long id) {
 
         log.info("delete: id={}", id);
+        Long delId = secretaryDAO.get(id).getId();
         secretaryDAO.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(delId).build();
     }
 
     @Getter
@@ -78,6 +77,7 @@ public class SecretaryResources {
 
         private String name;
         private ArrayList<Long> subjects;
-        private int departamentId;
+        private Long departamentId;
+        private boolean postgraduate;
     }
 }

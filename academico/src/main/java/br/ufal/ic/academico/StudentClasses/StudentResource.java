@@ -76,7 +76,7 @@ public class StudentResource {
     public Response delete(@PathParam("id") Long id) {
         log.info("delete: id={}", id);
         studentDAO.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(id).build();
     }
 
 

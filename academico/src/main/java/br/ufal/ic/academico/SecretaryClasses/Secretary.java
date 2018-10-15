@@ -20,13 +20,15 @@ public class Secretary {
     private Long id;
 
     private String name;
+    private boolean postgraduate;
+    private Long departamentId;
 
     @Setter
-    private ArrayList<Long> subjects; //ID DAS MATERIAS
-    @Setter
-    private int departamentId;
+    private ArrayList<Long> subjects; //ID DAS MATERIAS   
 
-    public Secretary(String name) {
+    public Secretary(String name, boolean postgraduate, Long departamentId) {
         this.name = name;
+        this.postgraduate = postgraduate;
+        this.departamentId = departamentId;
     }
 }

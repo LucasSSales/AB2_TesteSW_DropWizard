@@ -79,7 +79,7 @@ public class SubjectResource {
     public Response delete(@PathParam("id") Long id) {
         log.info("delete: id={}", id);
         sdao.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(id).build();
     }
 
 
@@ -89,8 +89,6 @@ public class SubjectResource {
     @ToString
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class SubjectDTO {
-
-        //private Long id;
         private String name;
         private Long prerequisites;
         private Long courseID;
