@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("courses")
 @Slf4j
@@ -40,8 +41,9 @@ public class CourseResource {
 
         log.info("save: {}", entity);
 
-        Course c = new Course(entity.getName(), entity.getDepartamentId(), entity.getSecretaryId(), entity.getSubjectIds());
+        Course c = new Course(entity.getName(), entity.getDepartamentId(), entity.getSecretaryId());
         c.setStudents(entity.getStudents());
+        c.setSubjectIds(entity.getSubjectIds());
 
         return Response.ok(courseDAO.persist(c)).build();
     }
@@ -56,6 +58,7 @@ public class CourseResource {
 
         Course c = courseDAO.get(id);
         c.setStudents(entity.getStudents());
+        c.setSubjectIds(entity.getSubjectIds());
         return Response.ok(entity).build();
     }
 
@@ -65,8 +68,9 @@ public class CourseResource {
     public Response delete(@PathParam("id") Long id) {
 
         log.info("delete: id={}", id);
+        Long delId = courseDAO.get(id).getId();
         courseDAO.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(delId).build();
     }
 
     @Getter
@@ -76,10 +80,10 @@ public class CourseResource {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class CourseDTO {
         private String name;
-        private int departamentId;
-        private int secretaryId;
-        private int[] subjectIds;
-        private long[] students;
+        private Long departamentId;
+        private Long secretaryId;
+        private ArrayList<Long> subjectIds;
+        private ArrayList<Long> students;
     }
 
 

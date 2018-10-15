@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("departaments")
 @Slf4j
@@ -44,7 +45,8 @@ public class DepartamentResources {
 
         log.info("save: {}", entity);
 
-        Departament d = new Departament(entity.getName(), entity.getCoursesIds());
+        Departament d = new Departament(entity.getName());
+        d.setCoursesIds(entity.getCoursesIds());
         d.setGradSec(entity.getGradSec());
         d.setPosGradSec(entity.getPosGradSec());
         d.setProfessors(entity.getProfessors());
@@ -63,6 +65,7 @@ public class DepartamentResources {
         d.setGradSec(entity.getGradSec());
         d.setPosGradSec(entity.getPosGradSec());
         d.setProfessors(entity.getProfessors());
+        d.setCoursesIds(entity.getCoursesIds());
         return Response.ok(entity).build();
     }
 
@@ -71,8 +74,9 @@ public class DepartamentResources {
     @UnitOfWork
     public Response delete(@PathParam("id") Long id) {
         log.info("delete: id={}", id);
+        Long delId = departamentDAO.get(id).getId();
         departamentDAO.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(delId).build();
     }
 
     @Getter
@@ -82,10 +86,10 @@ public class DepartamentResources {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class DepartamentDTO {
         private String name;
-        private int[] coursesIds;
-        private int gradSec;
-        private int posGradSec;
-        private int[] professors;
+        private ArrayList<Long> coursesIds;
+        private Long gradSec;
+        private Long posGradSec;
+        private ArrayList<Long> professors;
     }
 
 

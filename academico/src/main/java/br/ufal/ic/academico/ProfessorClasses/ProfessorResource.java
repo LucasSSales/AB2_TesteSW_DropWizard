@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("professors")
 @Slf4j
@@ -64,8 +65,9 @@ public class ProfessorResource {
     public Response delete(@PathParam("id") Long id) {
 
         log.info("delete: id={}", id);
+        Long delId = professorDAO.get(id).getId();
         professorDAO.delete(id);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return Response.ok(delId).build();
     }
 
     @Getter
@@ -76,7 +78,7 @@ public class ProfessorResource {
     public static class ProfessorDTO {
 
         private String name;
-        private int departamentId;
-        private int[] subjects;
+        private Long departamentId;
+        private ArrayList<Long> subjects;
     }
 }

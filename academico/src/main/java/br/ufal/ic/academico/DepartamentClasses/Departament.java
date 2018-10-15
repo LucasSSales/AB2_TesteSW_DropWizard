@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.ArrayList;
 
 @Entity
 @Getter
@@ -19,18 +20,18 @@ public class Departament {
     private Long id;
 
     private String name;
-    private int[] coursesIds;
 
     @Setter
-    private int gradSec; //ID DA SECRETARIA DE GRADUAÇÃO, SE -1 É PORQUE NÃO TEM
+    private ArrayList<Long> coursesIds;
     @Setter
-    private int posGradSec; //ID DA SECRETARIA DE POS GRADUAÇÃO, SE -1, É PORQUE NÃO TEM
+    private Long gradSec; //ID DA SECRETARIA DE GRADUAÇÃO, SE -1 É PORQUE NÃO TEM
     @Setter
-    private int[] professors; //IDS DOS PROFEOSSORES
+    private Long posGradSec; //ID DA SECRETARIA DE POS GRADUAÇÃO, SE -1, É PORQUE NÃO TEM
+    @Setter
+    private ArrayList<Long> professors; //IDS DOS PROFEOSSORES
 
-    public Departament (String name, int[] coursesIds){
+    public Departament (String name){
         this.name = name;
-        this.coursesIds = coursesIds;
     }
 
 }

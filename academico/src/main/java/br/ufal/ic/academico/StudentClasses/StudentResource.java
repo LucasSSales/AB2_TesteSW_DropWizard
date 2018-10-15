@@ -75,8 +75,9 @@ public class StudentResource {
     @UnitOfWork
     public Response delete(@PathParam("id") Long id) {
         log.info("delete: id={}", id);
+        Long delId = studentDAO.get(id).getId();
         studentDAO.delete(id);
-        return Response.ok(id).build();
+        return Response.ok(delId).build();
     }
 
 

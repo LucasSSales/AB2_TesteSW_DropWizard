@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.ArrayList;
 
 @Entity
 @Getter
@@ -19,14 +20,14 @@ public class Professor {
     private Long id;
 
     private String name;
-    private int departamentId;
+    private Long departamentId;
 
     @Setter
-    private int[] subjects; //IDS DAS MATERIAS QUE ELE/A LESSIONA
+    private ArrayList<Long> subjects; //IDS DAS MATERIAS QUE ELE/A LESSIONA
 
-    public Professor(String name, int departamentId){
+    public Professor(String name, Long departamentId){
         this.name = name;
-        this.departamentId =departamentId;
+        this.departamentId = departamentId;
     }
 
 }

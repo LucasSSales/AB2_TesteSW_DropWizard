@@ -78,8 +78,9 @@ public class SubjectResource {
     @UnitOfWork
     public Response delete(@PathParam("id") Long id) {
         log.info("delete: id={}", id);
+        Long delId = sdao.get(id).getId();
         sdao.delete(id);
-        return Response.ok(id).build();
+        return Response.ok(delId).build();
     }
 
 
