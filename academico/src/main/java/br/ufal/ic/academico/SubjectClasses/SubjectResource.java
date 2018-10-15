@@ -49,25 +49,29 @@ public class SubjectResource {
         log.info("save: {}", entity);
 
         Subject p = new Subject(
-                entity.getName(), entity.getPrerequisites(), entity.getCourseID(), entity.getDepartamentId(),
-                entity.getCredits(), entity.getMinCredits(), entity.getProfessor(), entity.isPostgraduate()
+                entity.getName(), entity.getPrerequisites(), entity.getCourseID(),
+                entity.getDepartamentId(), entity.getCredits(), entity.getMinCredits(),
+                entity.getProfessor(), entity.isPostgraduate()
         );
+
+        p.setStudentsId(entity.getStudentsId());
 
         return Response.ok(sdao.persist(p)).build();
     }
 
-//    @PUT
-//    @Path("/{id}")
-//    @UnitOfWork
-//    @Consumes("application/json")
-//    public Response update(@PathParam("id") Long id, SubjectDTO entity) {
-//
-//        log.info("update: id={}, {}", id, entity);
-//
-//        Subject p = sdao.get(id);
-//        System.out.println(p);
-//        return Response.ok(entity).build();
-//    }
+    @PUT
+    @Path("/{id}")
+    @UnitOfWork
+    @Consumes("application/json")
+    public Response update(@PathParam("id") Long id, SubjectDTO entity) {
+
+        log.info("update: id={}, {}", id, entity);
+
+        Subject s = sdao.get(id);
+        s.setStudentsId(entity.getStudentsId());
+
+        return Response.ok(entity).build();
+    }
 
     @DELETE
     @Path("/{id}")
@@ -89,12 +93,13 @@ public class SubjectResource {
         //private Long id;
         private String name;
         private Long prerequisites;
-        private int courseID;
-        private int departamentId;
+        private Long courseID;
+        private Long departamentId;
         private int credits;
         private int minCredits;
-        private int professor;
+        private Long professor;
         private boolean postgraduate;
+        private ArrayList<Long> studentsId;
     }
 
 

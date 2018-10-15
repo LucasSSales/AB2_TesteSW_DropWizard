@@ -2,10 +2,15 @@ package br.ufal.ic.academico;
 
 import br.ufal.ic.academico.DepartamentClasses.Departament;
 import br.ufal.ic.academico.DepartamentClasses.DepartamentDAO;
+import br.ufal.ic.academico.ProfessorClasses.Professor;
+import br.ufal.ic.academico.ProfessorClasses.ProfessorDAO;
+import br.ufal.ic.academico.SecretaryClasses.Secretary;
+import br.ufal.ic.academico.SecretaryClasses.SecretaryDAO;
 import br.ufal.ic.academico.StudentClasses.Student;
 import br.ufal.ic.academico.StudentClasses.StudentDAO;
 import br.ufal.ic.academico.SubjectClasses.Subject;
 import br.ufal.ic.academico.SubjectClasses.SubjectDAO;
+import br.ufal.ic.academico.SubjectClasses.SubjectInfos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.dropwizard.hibernate.UnitOfWork;
 import lombok.AllArgsConstructor;
@@ -30,6 +35,8 @@ public class RequirementsResources {
     private final StudentDAO studentDAO;
     private final DepartamentDAO departamentDAO;
     private final SubjectDAO subjectDAO;
+    private final SecretaryDAO secretaryDAO;
+    private final ProfessorDAO professorDAO;
 
     @GET
     @Path("/matricula")
@@ -131,6 +138,103 @@ public class RequirementsResources {
 
 
     }
+
+
+    //COMPROVANTE DE MATRICULA
+    @GET
+    @Path("/comprovante/{id}")
+    @UnitOfWork
+    public Response getProofEnrollment(@PathParam("id") Long id) {
+
+        log.info("getById: id={}", id);
+
+        Student s = studentDAO.get(id);
+        //VERIFICA SE O ID DO ALUNO EXISTE
+        if(s.equals(null))
+            return Response.status(404).build();
+
+        //LISTA DE MATERIAS NO BANCO
+        ArrayList<Subject> subject = (ArrayList) subjectDAO.list();
+        //LISTA DE IDS DE MATRIAS DO ALUNO
+        ArrayList<Long> subIds = s.getStudying();
+        //COMPROVANTE
+        ProofOfEnrollment proof = new ProofOfEnrollment(s);
+        //LISTA DE NOMES DE MATERIAS QUE O ALUNO ESTA CURSANDO
+        ArrayList<String> exit = new ArrayList<String>();
+
+
+        for (Subject subj : subject) {
+            if(subIds.contains(subj.getId()))
+                exit.add(subj.getName());
+        }
+
+        proof.setSubjects(exit);
+
+        return Response.ok(proof).build();
+    }
+
+    //LISTA DA SECRETARIA
+    @GET
+    @Path("/ofertas/{secId}")
+    @UnitOfWork
+    public Response secretaryList(@PathParam("secId") Long id) {
+
+        log.info("getById: id={}", id);
+
+        Secretary sec = secretaryDAO.get(id);
+        if(sec.equals(null))
+            return Response.status(404).build();
+
+        //LISTA DE MATERIAS NO BANCO
+        ArrayList<Subject> subject = (ArrayList) subjectDAO.list();
+        //LISTA DE IDS DE MATERIAS DA SECRETARIA
+        ArrayList<Long> subIds = sec.getSubjects();
+        //LISTA DE MATERIAS OFERTADAS PELO CURSO
+        ArrayList<Subject> exit = new ArrayList<Subject>();
+
+        for (Subject subj : subject) {
+            if(subIds.contains(subj.getId()))
+                exit.add(subj);
+        }
+
+        return Response.ok(exit).build();
+    }
+
+    //INFORMAÇOES DA MATERIA
+    @GET
+    @Path("/materiaInfo/{subjId}")
+    @UnitOfWork
+    public Response subjectInfos (@PathParam("subjId") Long id) {
+
+        log.info("getById: id={}", id);
+
+        Subject subject = subjectDAO.get(id);
+        if(subject.equals(null))
+            return Response.status(404).build();
+
+        //LISTA DE PROFESSORES NO BANCO
+        ArrayList<Professor> profs = (ArrayList) professorDAO.list();
+        String profName = new String();
+
+        if(profs.contains(subject.getProfessor()))
+            profName = profs.get(profs.indexOf( subject.getProfessor() )).getName();
+
+        //LISTA DE ALUNOS NO BANCO
+        ArrayList<Student> student = (ArrayList) studentDAO.list();
+        //LISTA DE IDS DOS ALUNOS MATRICULADOS
+        ArrayList<Long> stuIds = subject.getStudentsId();
+        //LISTA QUE IRA RECEBER OS NOMES DOS ALUNOS NO CURSO
+        ArrayList<String> stuNames = new ArrayList<String>();
+
+        for (Student stu: student) {
+            if(stuIds.contains(stu.getId()))
+                stuNames.add(stu.getName());
+        }
+
+        //SubjectInfos si = new SubjectInfos(subject, stuNames, profName);
+        return Response.ok().build();
+    }
+
 
     @Getter
     @RequiredArgsConstructor

@@ -11,6 +11,8 @@ Processo de Matrícula
 [X]Não pode se matricular em materias ja cursadas (ver se está em approved/studying)
 
 Consultas
-[]Cada secretaria deve listar informações das Materias ofertadas (id, creditos, id d prequisitos, num min de creditos, nome)
-[]Escolhendo um disciplina: id, num de creditos, id de prerequisitos, min de creditos, nome, professor, nome e id de alunos matriculados
-[]Emitir comprovante de matricula: nome, num de matricula(id), ids e nomes das materias em q esta matriculado 
+[X]Cada secretaria deve listar informações das Materias ofertadas (id, creditos, id d prequisitos, num min de creditos, nome)
+[X]Escolhendo um disciplina: id, num de creditos, id de prerequisitos, min de creditos, nome, professor, nome e id de alunos matriculados
+[X]Emitir comprovante de matricula: nome, num de matricula(id), ids e nomes das materias em q esta matriculado 
+
+OBS: implementado mas nao testado

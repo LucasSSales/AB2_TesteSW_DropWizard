@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("secretaries")
 @Slf4j
@@ -76,7 +77,7 @@ public class SecretaryResources {
     public static class SecretaryDTO {
 
         private String name;
-        private int[] subjects;
+        private ArrayList<Long> subjects;
         private int departamentId;
     }
 }

@@ -24,16 +24,18 @@ public class Subject {
 
     private String name;
     private Long prerequisites; //-1 se nao tiver
-    private int courseID;
-    private int departamentId;
+    private Long courseID;
+    private Long departamentId;
     private int credits;
     private int minCredits;
-    private int professor;
+    private Long professor;
     private boolean postgraduate;
+    @Setter
+    private ArrayList<Long> studentsId;
 
 
 
-    public Subject (String name, Long prerequisites, int courseID, int departamentId, int credits, int minCredits, int professor, boolean postgraduate){
+    public Subject (String name, Long prerequisites, Long courseID, Long departamentId, int credits, int minCredits, Long professor, boolean postgraduate){
         this.name = name;
         this.prerequisites = prerequisites;
         this.courseID = courseID;

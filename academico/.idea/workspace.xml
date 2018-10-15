@@ -15,59 +15,23 @@
       <file leaf-file-name="AcademicoApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="71" column="105" lean-forward="true" selection-start-line="71" selection-start-column="105" selection-end-line="71" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequirementsResources.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RequirementsResources.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="114" column="45" lean-forward="true" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+            <state relative-caret-position="200">
+              <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
               <folding>
-                <element signature="e#1868#1877#0" expanded="true" />
+                <element signature="e#1924#1933#0" expanded="true" />
+                <element signature="e#4993#5001#0" expanded="true" />
+                <element signature="e#6389#6398#0" expanded="true" />
+                <element signature="e#7509#7517#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -105,16 +69,19 @@
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/DepartamentClasses/DepartamentResources.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/ProfessorClasses/ProfessorDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/Secretary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryResources.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/ProfessorClasses/Professor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/ProfessorClasses/ProfessorResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/ProofOfEnrollment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/ProofOfEnrollment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/Secretary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryResources.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectInfos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java" />
       </list>
     </option>
   </component>
@@ -129,35 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
-              <item name="academico" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
-              <item name="academico" type="616d4139:PackageViewModuleNode" />
-              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
-              <item name="academico" type="616d4139:PackageViewModuleNode" />
-              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
-              <item name="ApplicationClasses" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
-              <item name="academico" type="616d4139:PackageViewModuleNode" />
-              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
-              <item name="exemplos" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,7 +137,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="academico" type="462c0819:PsiDirectoryNode" />
-              <item name="StudentClasses" type="462c0819:PsiDirectoryNode" />
+              <item name="SecretaryClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="academico" type="b2602c69:ProjectViewProjectNode" />
@@ -220,13 +159,46 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
+              <item name="academico" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
+              <item name="academico" type="616d4139:PackageViewModuleNode" />
+              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
+              <item name="academico" type="616d4139:PackageViewModuleNode" />
+              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
+              <item name="ApplicationClasses" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="academico" type="58d84e3e:PackageViewProjectNode" />
+              <item name="academico" type="616d4139:PackageViewModuleNode" />
+              <item name="br.ufal.ic.academico" type="1f31426a:PackageElementNode" />
+              <item name="exemplos" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.ufal.ic.academico" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,7 +217,7 @@
       <module name="academico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.*" />
+          <option name="PATTERN" value="br.ufal.ic.academico.SubjectClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,7 +243,7 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.*" />
+          <option name="PATTERN" value="br.ufal.ic.academico.SubjectClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,7 +325,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -365,7 +337,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25755167" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20031796" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -388,24 +360,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/exemplos/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/exemplos/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/exemplos/MyResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -424,9 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -455,9 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,10 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -550,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,11 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,9 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,10 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,20 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,26 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/Secretary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -728,62 +620,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="71" column="89" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+        <state relative-caret-position="130">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="374">
+          <caret line="71" column="105" lean-forward="true" selection-start-line="71" selection-start-column="105" selection-end-line="71" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/ProofOfEnrollment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="114" column="45" lean-forward="true" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
-          <folding>
-            <element signature="e#1868#1877#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="272">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="70" column="48" lean-forward="true" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/Secretary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/SubjectInfos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SecretaryClasses/SecretaryResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
+          <folding>
+            <element signature="e#1924#1933#0" expanded="true" />
+            <element signature="e#4993#5001#0" expanded="true" />
+            <element signature="e#6389#6398#0" expanded="true" />
+            <element signature="e#7509#7517#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
