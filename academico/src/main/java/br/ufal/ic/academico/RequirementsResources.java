@@ -83,6 +83,8 @@ public class RequirementsResources {
 
         log.info("update: id={}, {}", id, entity);
 
+        
+
         Student student = studentDAO.get(id);
         //VERIFICA SE O ID DO ALUNO EXISTE
         if(student.equals(null))
@@ -98,26 +100,26 @@ public class RequirementsResources {
         if(subject.equals(null))
             return Response.status(404).build();
 
-        //VERIFICA SE POSSUI CREDITOS O BASTANTE PARA A MATERIA
+
+        //VERIFICA SE POSSUI CREDITOS O BASTANTE PARA A MATERIA//
         if(subject.getMinCredits() > student.getScore())
-            return Response.status(403).build();
+            return Response.ok("Falha").build();
 
         //VERIFICA SE ALUNO DE GRADUACAO PD CURSAR MATERIA DE POS
         if(subject.isPostgraduate() && !student.isPostgraduate() && student.getScore() < 170)
-            return Response.status(403).build();
+            return Response.ok("Falha").build();
 
         //IMPEDE ALUNO DE POS D CURSAR MATERIA DE GRADUACAO
         if(!subject.isPostgraduate() && student.isPostgraduate())
-            return Response.status(403).build();
+            return Response.ok("Falha").build();
 
         //ArrayList<Long> disapproved = student.getDisapproved();
         ArrayList<Long> studying = student.getStudying();
-
         for (Long i: studying) {
             if(i.equals(subjId))
-                return Response.status(403).build();
+                return Response.ok("Falha!").build();
         }
-
+/*
         //PRE REQUISITOS VERIFICAR SE POSSUI
         if(subject.getPrerequisites() != -1){
             ArrayList<Long> approved = student.getApproved();
@@ -138,8 +140,8 @@ public class RequirementsResources {
         ArrayList<Long> exit = student.getStudying();
         exit.add(subjId);
         student.setStudying(exit);
-
-        return Response.ok(entity).build();
+*/
+        return Response.ok("Sucesso").build();
 
 
     }
