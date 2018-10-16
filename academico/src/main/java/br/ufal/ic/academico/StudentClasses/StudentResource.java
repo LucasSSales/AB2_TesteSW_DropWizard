@@ -62,7 +62,6 @@ public class StudentResource {
         log.info("update: id={}, {}", id, entity);
 
         Student p = studentDAO.get(id);
-        System.out.println(p);
         p.setScore(entity.getScore());
         p.setStudying(entity.getStudying());
         p.setApproved(entity.getApproved());

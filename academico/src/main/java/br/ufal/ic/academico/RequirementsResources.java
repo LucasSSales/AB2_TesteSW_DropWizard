@@ -119,7 +119,7 @@ public class RequirementsResources {
             if(i.equals(subjId))
                 return Response.ok("Falha!").build();
         }
-/*
+
         //PRE REQUISITOS VERIFICAR SE POSSUI
         if(subject.getPrerequisites() != -1){
             ArrayList<Long> approved = student.getApproved();
@@ -130,20 +130,27 @@ public class RequirementsResources {
                     ArrayList<Long> exit = student.getStudying();
                     exit.add(subjId);
                     student.setStudying(exit);
+
+                    ArrayList<Long> exit2 = subject.getStudentsId();
+                    exit2.add(id);
+                    subject.setStudentsId(exit2);
+
                     return Response.ok(entity).build();
                 }
                    
             }
-            return Response.status(403).build();
+            return Response.ok("Falha! Sem os Pre Requisitos necessarios!").build();
         }
 
         ArrayList<Long> exit = student.getStudying();
         exit.add(subjId);
         student.setStudying(exit);
-*/
+
+        ArrayList<Long> exit2 = subject.getStudentsId();
+        exit2.add(id);
+        subject.setStudentsId(exit2);
+
         return Response.ok("Sucesso").build();
-
-
     }
 
 
