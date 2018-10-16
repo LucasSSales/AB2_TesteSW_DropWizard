@@ -41,6 +41,20 @@ public class RequirementsTest {
 
     private String acad = "academicotest";
 
+//    private Departament postDepartament(){
+//        Departament d = new Departament("Computacao");
+//        d.setProfessors(new ArrayList<Long>());
+//        d.setGradSec(new Long(69));
+//        d.setPosGradSec(new Long(-1));
+//        d.setCoursesIds(new ArrayList<Long>());
+//        Departament post = RULE.client().target(
+//                String.format("http://localhost:%d/%s/departaments", RULE.getLocalPort(), acad))
+//                .request()
+//                .post(Entity.json(d), Departament.class);
+//        return post;
+//    }
+
+
     @Test
     public void testList() {
 
@@ -158,6 +172,46 @@ public class RequirementsTest {
                 }, "Não lançou a excessao");
 
     }
+
+//    @Test
+//    public void testPut1(){
+//        //DEPARTAMENTO
+//        Departament d = new Departament("Computacao");
+//        d.setProfessors(new ArrayList<Long>());
+//        d.setGradSec(new Long(69));
+//        d.setPosGradSec(new Long(-1));
+//        d.setCoursesIds(new ArrayList<Long>());
+//        Departament post = RULE.client().target(
+//                String.format("http://localhost:%d/%s/departaments", RULE.getLocalPort(), acad))
+//                .request()
+//                .post(Entity.json(d), Departament.class);
+//
+//        //MATERIA
+//        Subject s = new Subject("Teste de Software", new Long(-1), new Long(80),
+//                post.getId(), 200, 0, new Long(270), false);
+//        s.setStudentsId(new ArrayList<Long>());
+//        Subject saved1 = RULE.client().target(
+//                String.format("http://localhost:%d/%s/subjects", RULE.getLocalPort(), acad))
+//                .request()
+//                .post(Entity.json(s), Subject.class);
+//
+//        //ALUNO
+//        Student st = new Student("Caesar Zeppelli", new Long(4), post.getId(), false);
+//        st.setScore(0);
+//        Student post1 = RULE.client().target(
+//                String.format("http://localhost:%d/%s/students", RULE.getLocalPort(), acad))
+//                .request()
+//                .post(Entity.json(st), Student.class);
+//
+//        //TESTANDO O CASO QUE FUNCIONA
+//        Long saved = RULE.client().target( //                                                                id aluno/id dept/id materia
+//                String.format("http://localhost:%d/%s/drca/matricula/%d/%d/%d", RULE.getLocalPort(), acad, post1.getId(), post.getId(), saved1.getId()))
+//                .request()
+//                .put(Entity.json(saved1.getId()), Long.class);
+//
+//
+//
+//    }
 
 //    @Test
 //    public void testPut() {
