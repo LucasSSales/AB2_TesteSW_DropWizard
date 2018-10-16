@@ -179,6 +179,7 @@ public class RequirementsTest {
         Subject s = new Subject("Teste de Software", new Long(-1), new Long(80),
                 post.getId(), 200, 0, new Long(270), false);
         s.setStudentsId(new ArrayList<Long>());
+        s.setStudentsId(new ArrayList<Long>());
         Subject saved1 = RULE.client().target(
                 String.format("http://localhost:%d/%s/subjects", RULE.getLocalPort(), acad))
                 .request()
@@ -187,12 +188,13 @@ public class RequirementsTest {
         //ALUNO
         Student st = new Student("Caesar Zeppelli", new Long(4), post.getId(), false);
         st.setScore(0);
+        st.setStudying(new ArrayList<Long>());
+        st.setApproved(new ArrayList<Long>());
         Student post1 = RULE.client().target(
                 String.format("http://localhost:%d/%s/students", RULE.getLocalPort(), acad))
                 .request()
                 .post(Entity.json(st), Student.class);
 
-        //TESTANDO O CASO QUE FUNCIONA
         String saved = RULE.client().target( //                                                                id aluno/id dept/id materia
                 String.format("http://localhost:%d/%s/drca/matricula/%d/%d/%d", RULE.getLocalPort(), acad, post1.getId(), post.getId(), saved1.getId()))
                 .request()
@@ -246,6 +248,7 @@ public class RequirementsTest {
         Subject s = new Subject("Teste de Software", new Long(-1), new Long(80),
                 post.getId(), 200, 0, new Long(270), true);
         s.setStudentsId(new ArrayList<Long>());
+        s.setStudentsId(new ArrayList<Long>());
         Subject saved1 = RULE.client().target(
                 String.format("http://localhost:%d/%s/subjects", RULE.getLocalPort(), acad))
                 .request()
@@ -254,6 +257,8 @@ public class RequirementsTest {
         //ALUNO DE POS
         Student st = new Student("Caesar Zeppelli", new Long(4), post.getId(), true);
         st.setScore(0);
+        st.setStudying(new ArrayList<Long>());
+        st.setApproved(new ArrayList<Long>());
         Student post1 = RULE.client().target(
                 String.format("http://localhost:%d/%s/students", RULE.getLocalPort(), acad))
                 .request()
@@ -265,6 +270,7 @@ public class RequirementsTest {
                 .request()
                 .put(Entity.json(saved1.getId()), String.class);
 
+        assertNotNull(saved);
         assertEquals("Sucesso", saved.toString());
     }
 

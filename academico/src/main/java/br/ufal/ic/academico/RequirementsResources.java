@@ -83,8 +83,6 @@ public class RequirementsResources {
 
         log.info("update: id={}, {}", id, entity);
 
-        
-
         Student student = studentDAO.get(id);
         //VERIFICA SE O ID DO ALUNO EXISTE
         if(student.equals(null))
@@ -137,7 +135,7 @@ public class RequirementsResources {
 
                     return Response.ok(entity).build();
                 }
-                   
+
             }
             return Response.ok("Falha! Sem os Pre Requisitos necessarios!").build();
         }

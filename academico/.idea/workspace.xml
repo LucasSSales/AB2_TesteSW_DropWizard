@@ -17,76 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RequirementsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/RequirementsTest.java">
+      <file leaf-file-name="AcademicoApp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2857#7596#0" />
-                <element signature="e#3551#3560#0" expanded="true" />
-                <element signature="e#7602#9323#0" />
-                <element signature="e#10699#12474#0" />
-                <element signature="e#15415#15424#0" expanded="true" />
-                <element signature="e#17229#17235#0" expanded="true" />
-                <element signature="e#19755#19763#0" expanded="true" />
-                <element signature="e#19813#19819#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnrollmentTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/EnrollmentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="223" column="100" selection-start-line="223" selection-start-column="100" selection-end-line="223" selection-end-column="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#postDep#0;class#EnrollmentTest#0" />
-                <element signature="method#postSubj#0;class#EnrollmentTest#0" />
-                <element signature="method#postSubj#1;class#EnrollmentTest#0" />
-                <element signature="method#postStu#0;class#EnrollmentTest#0" />
-                <element signature="method#testPut2#0;class#EnrollmentTest#0" />
-                <element signature="method#testPut2#0;class#EnrollmentTest#0" />
-                <element signature="method#testPut3#0;class#EnrollmentTest#0" />
-                <element signature="method#testPut4#0;class#EnrollmentTest#0" />
-                <element signature="e#5178#5184#0" expanded="true" />
-                <element signature="method#testPut5#0;class#EnrollmentTest#0" />
-                <element signature="e#6012#6018#0" expanded="true" />
-                <element signature="e#7677#7683#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Requirement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Requirement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequirementsResources.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="147" selection-start-line="147" selection-end-line="147" />
+            <state relative-caret-position="136">
+              <caret line="79" column="57" lean-forward="true" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -150,10 +85,10 @@
         <option value="$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/DBTests/StudentDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/DBTests/SubjectDBTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Requirement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/RequirementsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/EnrollmentTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/RequirementsTest.java" />
       </list>
     </option>
   </component>
@@ -260,6 +195,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="academico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academico" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="academico" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -317,78 +260,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnrollmentTest">
-    <configuration name="StudentDBTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.AcademicoApp">
+    <configuration name="AcademicoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.AcademicoApp" />
       <module name="academico" />
+      <option name="PROGRAM_PARAMETERS" value="server C:\Users\Lucas\Desktop\academico\target\classes\config.yml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.DBTests.*" />
+          <option name="PATTERN" value="br.ufal.ic.academico.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.ufal.ic.academico.DBTests" />
-      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.DBTests.StudentDBTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="EnrollmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="academico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.ufal.ic.academico" />
-      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.EnrollmentTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RequirementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="academico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.ufal.ic.academico" />
-      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.RequirementsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="RequirementsTest.testPut1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="academico" />
@@ -413,20 +299,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="SubjectDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RequirementsTest.testPut2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="academico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.ufal.ic.academico.DBTests.*" />
+          <option name="PATTERN" value="br.ufal.ic.academico.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.ufal.ic.academico.DBTests" />
-      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.DBTests.SubjectDBTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="br.ufal.ic.academico" />
+      <option name="MAIN_CLASS_NAME" value="br.ufal.ic.academico.RequirementsTest" />
+      <option name="METHOD_NAME" value="testPut2" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -443,6 +329,52 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="br.ufal.ic.academico in academico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="academico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufal.ic.academico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.ufal.ic.academico" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="br.ufal.ic.academico.DBTests in academico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="academico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufal.ic.academico.DBTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.ufal.ic.academico.DBTests" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -475,19 +407,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Android JUnit.StudentDBTest" />
-      <item itemvalue="JUnit.SubjectDBTest" />
+      <item itemvalue="Application.AcademicoApp" />
       <item itemvalue="JUnit.RequirementsTest.testPut1" />
-      <item itemvalue="JUnit.RequirementsTest" />
-      <item itemvalue="JUnit.EnrollmentTest" />
+      <item itemvalue="JUnit.br.ufal.ic.academico in academico" />
+      <item itemvalue="JUnit.br.ufal.ic.academico.DBTests in academico" />
+      <item itemvalue="JUnit.RequirementsTest.testPut2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EnrollmentTest" />
-        <item itemvalue="JUnit.RequirementsTest" />
+        <item itemvalue="Application.AcademicoApp" />
+        <item itemvalue="JUnit.br.ufal.ic.academico.DBTests in academico" />
+        <item itemvalue="JUnit.br.ufal.ic.academico in academico" />
         <item itemvalue="JUnit.RequirementsTest.testPut1" />
-        <item itemvalue="JUnit.SubjectDBTest" />
-        <item itemvalue="Android JUnit.StudentDBTest" />
+        <item itemvalue="JUnit.RequirementsTest.testPut2" />
       </list>
     </recent_temporary>
   </component>
@@ -505,40 +437,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EnrollmentTest - 2018.10.16 at 09h 48m 28s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="br_ufal_ic_academico_DBTests_in_academico - 2018.10.16 at 10h 44m 55s.xml">
+      <configuration name="br.ufal.ic.academico.DBTests in academico" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 09h 54m 08s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 45m 22s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 00m 53s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 47m 50s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 05m 59s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 49m 53s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 06m 44s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 51m 57s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 16m 18s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 54m 42s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 20m 14s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut2 - 2018.10.16 at 10h 54m 55s.xml">
+      <configuration name="RequirementsTest.testPut2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 21m 18s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="RequirementsTest_testPut1 - 2018.10.16 at 10h 55m 41s.xml">
+      <configuration name="RequirementsTest.testPut1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 21m 42s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="br_ufal_ic_academico_in_academico - 2018.10.16 at 10h 56m 13s.xml">
+      <configuration name="br.ufal.ic.academico in academico" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnrollmentTest - 2018.10.16 at 10h 22m 32s.xml">
-      <configuration name="EnrollmentTest" configurationId="JUnit" />
+    <history-entry file="br_ufal_ic_academico_DBTests_in_academico - 2018.10.16 at 10h 56m 59s.xml">
+      <configuration name="br.ufal.ic.academico.DBTests in academico" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -619,6 +550,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -647,6 +585,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,6 +735,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -800,13 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="79" column="57" lean-forward="true" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -897,23 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/ResourceTests/StudentRTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Requirement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -928,30 +849,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/ResourceTests/StudentRTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        <state relative-caret-position="17">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/RequirementsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="124">
+          <caret line="165" column="26" selection-start-line="165" selection-start-column="26" selection-end-line="165" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#RequirementsTest#0" />
+            <element signature="e#2167#2851#0" />
             <element signature="e#2857#7596#0" />
             <element signature="e#3551#3560#0" expanded="true" />
             <element signature="e#7602#9323#0" />
-            <element signature="e#10699#12474#0" />
+            <element signature="e#11922#15316#0" />
+            <element signature="e#15322#19128#0" />
             <element signature="e#15415#15424#0" expanded="true" />
             <element signature="e#17229#17235#0" expanded="true" />
             <element signature="e#19755#19763#0" expanded="true" />
@@ -962,10 +878,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/br/ufal/ic/academico/EnrollmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="223" column="100" selection-start-line="223" selection-start-column="100" selection-end-line="223" selection-end-column="100" />
+        <state relative-caret-position="1343">
+          <caret line="226" column="32" lean-forward="true" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#postDep#0;class#EnrollmentTest#0" />
             <element signature="method#postSubj#0;class#EnrollmentTest#0" />
             <element signature="method#postSubj#1;class#EnrollmentTest#0" />
@@ -979,6 +894,37 @@
             <element signature="e#6012#6018#0" expanded="true" />
             <element signature="e#7677#7683#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/SubjectClasses/Requirement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/StudentClasses/StudentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/RequirementsResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufal/ic/academico/AcademicoApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="79" column="57" lean-forward="true" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
         </state>
       </provider>
     </entry>
