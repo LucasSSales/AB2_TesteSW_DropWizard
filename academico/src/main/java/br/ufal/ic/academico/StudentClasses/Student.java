@@ -20,8 +20,8 @@ public class Student {
     private Long id;
 
     private String name;
-    private int courseID;
-    private int departamentID;
+    private Long courseID;
+    private Long departamentID;
     private boolean postgraduate;
 
     @Setter
@@ -33,7 +33,7 @@ public class Student {
     @Setter
     private ArrayList<Long> disapproved; //ID DAS MATERIAS EM Q FOI REPROVADO
 
-    public Student(String name, int courseID, int departamentID, boolean postgraduate) {
+    public Student(String name, Long courseID, Long departamentID, boolean postgraduate) {
         this.name = name;
         this.courseID = courseID;
         this.departamentID = departamentID;

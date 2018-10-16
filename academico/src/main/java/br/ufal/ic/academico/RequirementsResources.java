@@ -106,14 +106,14 @@ public class RequirementsResources {
         if(subject.isPostgraduate() && !student.isPostgraduate() && student.getScore() < 170)
             return Response.status(403).build();
 
-        //IMPEDE ALUNO DE POS D CURSAR MATERIA DE GRADUACO
+        //IMPEDE ALUNO DE POS D CURSAR MATERIA DE GRADUACAO
         if(!subject.isPostgraduate() && student.isPostgraduate())
             return Response.status(403).build();
 
         //ArrayList<Long> disapproved = student.getDisapproved();
         ArrayList<Long> studying = student.getStudying();
 
-        for (Long i: studying ) {
+        for (Long i: studying) {
             if(i.equals(subjId))
                 return Response.status(403).build();
         }
@@ -124,8 +124,13 @@ public class RequirementsResources {
             Long preRequisite = subject.getPrerequisites();
 
             for (Long i : approved) {
-                if(i.equals(preRequisite))
+                if(i.equals(preRequisite)){
+                    ArrayList<Long> exit = student.getStudying();
+                    exit.add(subjId);
+                    student.setStudying(exit);
                     return Response.ok(entity).build();
+                }
+                   
             }
             return Response.status(403).build();
         }
@@ -216,8 +221,12 @@ public class RequirementsResources {
         ArrayList<Professor> profs = (ArrayList) professorDAO.list();
         String profName = new String();
 
-        if(profs.contains(subject.getProfessor()))
-            profName = profs.get(profs.indexOf( subject.getProfessor() )).getName();
+
+        for (Professor prof: profs) {
+            if(subject.getProfessor().equals(prof.getId()))
+                profName = prof.getName();
+        }
+            
 
         //LISTA DE ALUNOS NO BANCO
         ArrayList<Student> student = (ArrayList) studentDAO.list();
@@ -231,8 +240,9 @@ public class RequirementsResources {
                 stuNames.add(stu.getName());
         }
 
-        //SubjectInfos si = new SubjectInfos(subject, stuNames, profName);
-        return Response.ok().build();
+        SubjectInfos si = new SubjectInfos(subject, stuNames, profName);
+
+        return Response.ok(si).build();
     }
 
 

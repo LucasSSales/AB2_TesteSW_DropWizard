@@ -72,7 +72,7 @@ public class StudentTest {
     @Test
     public void testSave() {
 
-        Student s = new Student("Joseph Joestar", 1, 2, false);
+        Student s = new Student("Joseph Joestar", new Long(1), new Long(2), false);
 
         Student saved = RULE.client().target(
                 String.format("http://localhost:%d/%s/students", RULE.getLocalPort(), acad))
@@ -115,7 +115,7 @@ public class StudentTest {
 
     @Test
     public void testPost(){
-        Student s = new Student("Jotaro Kujo", 10, 15, false);
+        Student s = new Student("Jotaro Kujo", new Long(10), new Long(15), false);
         s.setScore(0);
         s.setStudying(new ArrayList<Long>());
         s.setApproved(new ArrayList<Long>());
@@ -129,8 +129,8 @@ public class StudentTest {
                 () -> {
                     assertNotNull(saved.getId());
                     assertEquals("Jotaro Kujo", saved.getName());
-                    assertEquals(10, s.getCourseID());
-                    assertEquals(15, saved.getDepartamentID());
+                    assertEquals(new Long(10), s.getCourseID());
+                    assertEquals(new Long(15), saved.getDepartamentID());
                     assertFalse(saved.isPostgraduate());
                 },
                 () -> {
@@ -154,7 +154,7 @@ public class StudentTest {
     @Test
     public void testPut(){
         //FAZENDO POST
-        Student s = new Student("Giorno Giovanna", 10, 15, false);
+        Student s = new Student("Giorno Giovanna", new Long(10), new Long(15), false);
         s.setScore(0);
         s.setStudying(new ArrayList<Long>());
         s.setApproved(new ArrayList<Long>());

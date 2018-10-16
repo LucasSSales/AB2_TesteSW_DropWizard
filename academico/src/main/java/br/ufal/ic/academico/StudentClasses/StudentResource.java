@@ -89,8 +89,8 @@ public class StudentResource {
     public static class StudentDTO {
 
         private String name;
-        private int courseID;
-        private int departamentID;
+        private Long courseID;
+        private Long departamentID;
         private int score;
         private boolean postgraduate;
         private ArrayList<Long> studying;
